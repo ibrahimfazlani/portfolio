@@ -1,0 +1,83 @@
+body{
+    background-color: #0B1026;
+    background-image: url(assets/website-background.png);
+    background-repeat: repeat;
+    font-family: "Inter", sans-serif;
+    color: #F5F0E6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1,h2{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+.desc-card{
+    color: #1B2340;
+    background-color: #F5F0E6;
+    border-radius: 10px;
+    width:90%;
+    max-width: 1000px;
+    height: fit-content;
+    padding: 5px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.desc-card:hover{
+        cursor: text;
+        transform: translateY(2px) scale(1.05);
+}
+
+.day-card {
+    background-color: #1E2A52;
+    box-sizing: border-box;
+    font-style: normal;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 15px;
+    font-weight: 400;
+    transition: transform 0.3s ease;
+    flex:1;
+}
+
+.day-card:hover{
+    transform: scale(1.05) translateX(5px);
+}
+
+.day{
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.date{
+    color: #FFB84D;
+    text-align: center;
+}
+
+.topic-covered {
+    color: #7DD3FC;
+    font-family: "Poppins", sans-serif;
+}
+
+.day-desc{
+    color: #DCE3FF;
+    font-weight: 300;
+}
+.topic-list {
+    color: #CBD5F5;
+}
+#day1-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+@media(min-width:768px){
+    #day1-2{
+        flex-direction: row;
+        width:90%;
+        padding: 10px;
+        margin: 25px;
+    }
+}
